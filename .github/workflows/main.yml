@@ -9,7 +9,7 @@ jobs: # the things being executed
       - uses: actions/checkout@v4 # using version 4 of Actions
       - name: Install Dependencies
         run: npm install
-      - name: Unit Test
-        run: npm test ./__tests__/sum.test.js # the actual testing line
+      - name: Run all tests
+        run: npm test ./__tests__/sum.test.js # the actual testing lin
       - name: Second test
         run: npm test ./__tests__/unit.test.js
